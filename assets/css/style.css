@@ -1,0 +1,50 @@
+body {
+    background: linear-gradient(white, gray, white);
+    font-family: 'Anton', sans-serif;
+}
+
+#backgroundPic {
+    max-width: 90%;
+    height: auto;
+}
+
+#grassBack {
+    width: 100%;
+    border: #18832c 4px dashed;
+    height: fit-content;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#wordHolder,
+#guessCount,
+#lettersGuessed,
+#winCount {
+    height: 40px;
+}
+
+#wordHolder {
+    font-size: 26px;
+}
+
+#guessCount,
+#winCount {
+    font-size: 24px;
+}
+
+#lettersGuessed {
+    font-size: 18px;
+}
+
+#winMessage {
+    position: relative;
+    top: -50%;
+    z-index: 99;
+    visibility: hidden;
+    
+}
