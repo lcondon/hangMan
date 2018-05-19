@@ -57,7 +57,7 @@ function updateGuesses(letter) {
             allowedGuesses--;
             guessesRemaining.innerHTML = allowedGuesses;
         }
-    } else if (chosenWord.indexOf(letter) >= 0 && acceptableGuesses.indexOf(letter) >= 0) {
+    } else if (chosenWord.indexOf(letter) >= 0 && acceptableGuesses.indexOf(letter) >= 0 && correctGuesses.indexOf(letter) == -1) {
         for (var i = 0; i < chosenWord.length; i++) {
             if (chosenWord[i] === letter) {
                 correctGuesses[i] = letter;
