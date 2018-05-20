@@ -31,6 +31,8 @@ function startNewGame() {
     allowedGuesses = 13;
     correctGuesses = [];
     letterGuesses = [];
+    wrongGuesses = [];
+    letterGuess.innerHTML = wrongGuesses;
     setTimeout(hideMessage, 2000);
 
     for (var i = 0; i < chosenWord.length; i++) {
